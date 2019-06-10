@@ -10,8 +10,8 @@ package com.learnings.designPatterns.structural.decorator;
  * Each decorator takes a component(can be concrete component or another decorator) 
  * which allows to extend the component functionality as we go on implementing new decorators.
  * </b>
- *
- * Its a great pattern if we dont want to modify the bas object and we can use decorators for modifying the object. 
+ * <br>
+ * <b>Its a great pattern if we don't want to modify the base object and we can use decorators for modifying the object.<b> 
  *
  */	
 public interface Sandwich {

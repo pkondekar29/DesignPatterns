@@ -7,7 +7,7 @@ public class DriverProgram {
 	 * Pattern of pattern.
 	 * 
 	 * Utilizes a factory pattern once for creation.
-	 * Encompases creation inside of structural pattern. It can manage the total lifecycle of the object.
+	 * Encompasses creation inside of structural pattern. It can manage the total lifecycle of the object.
 	 * 
 	 * @param args
 	 */
@@ -21,7 +21,6 @@ public class DriverProgram {
 //		System.out.println(System.identityHashCode(second));
 //		System.out.println(System.identityHashCode(third));
 //		
-		
 		InventorySystem is = new InventorySystem();
 		
 		is.takeOrder("Pen", 1);
