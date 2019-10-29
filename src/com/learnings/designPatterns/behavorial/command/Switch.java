@@ -1,7 +1,7 @@
 package com.learnings.designPatterns.behavorial.command;
 
 /**
- *	invoker  
+ *	invoker of command
  * 
  */
 public class Switch {

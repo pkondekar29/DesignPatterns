@@ -1,12 +1,12 @@
 package com.learnings.designPatterns.behavorial.command;
 
 /**
- * reciever of command
+ * Receiver of command
  * 
  */
 public class Light {
 
-	private boolean isOn = false;
+	private boolean isOn = false;		// state of the command is encapsulated in the receiver
 	
 	public void toogle() {
 		if(isOn) {
