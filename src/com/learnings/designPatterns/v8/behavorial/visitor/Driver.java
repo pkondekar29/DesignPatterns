@@ -2,9 +2,6 @@ package com.learnings.designPatterns.v8.behavorial.visitor;
 
 import java.util.function.Consumer;
 
-import com.learnings.designPatterns.v8.model.Rectangle;
-import com.learnings.designPatterns.v8.model.Shape;
-import com.learnings.designPatterns.v8.model.Triangle;
 import com.learnings.designPatterns.v8.model.visitor.Body;
 import com.learnings.designPatterns.v8.model.visitor.Car;
 import com.learnings.designPatterns.v8.model.visitor.Engine;
