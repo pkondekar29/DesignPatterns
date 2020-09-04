@@ -9,21 +9,21 @@ public class AIDXValidationExecutor implements AIDXOperationExecutor {
     }
 
     @Override
-    public void performMiscOperation(AIDXDto aidxDto) {
+    public void performMiscOperation(MiscOperation miscOperation, AIDXDto aidxDto) {
         System.out.println("Performing misc validations");
     }
 
     @Override
-    public void performPaymentOperation(AIDXDto aidxDto) {
+    public void performPaymentOperation(PaymentOperation paymentOperation, AIDXDto aidxDto) {
         System.out.println("Performing payment validations");
     }
 
-    // @Override
-    // public void performOperation(IataAIDXRootOperation rootOperation) {
-    //     rootOperation.operations().stream()
-    //         .forEach(o -> {
-    //             o.perform(this);
-    //         });
-    // }
+    @Override
+    public void performOperation(IataAIDXRootOperation rootOperation, AIDXDto aidxDto) {
+        rootOperation.operations().stream()
+            .forEach(o -> {
+                o.perform(this);
+            });
+    }
 
 }

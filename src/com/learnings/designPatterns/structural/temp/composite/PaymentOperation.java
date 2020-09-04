@@ -8,6 +8,6 @@ public class PaymentOperation extends AIDXOperation {
 
     @Override
     public void perform(AIDXOperationExecutor executor) {
-        executor.performPaymentOperation(aidxDto);
+        executor.performPaymentOperation(this, aidxDto);
     }    
 }

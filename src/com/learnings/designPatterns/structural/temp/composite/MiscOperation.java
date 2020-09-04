@@ -8,7 +8,7 @@ public class MiscOperation extends AIDXOperation {
 
     @Override
     public void perform(AIDXOperationExecutor executor) {
-        executor.performMiscOperation(aidxDto);
+        executor.performMiscOperation(this, aidxDto);
     }
     
 }

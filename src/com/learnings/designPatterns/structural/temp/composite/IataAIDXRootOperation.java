@@ -25,9 +25,6 @@ public class IataAIDXRootOperation extends AIDXOperation {
 
     @Override
     public void perform(AIDXOperationExecutor executor) {
-        this.operations.stream()
-            .forEach(operation -> {
-                operation.perform(executor);
-            });
+        executor.performOperation(this, aidxDto);
     }
 }
